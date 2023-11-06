@@ -1,11 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: admin
-  Date: 11/6/2023
-  Time: 4:17 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -13,14 +7,13 @@
 </head>
 <body>
 <h1>Sandwich</h1>
-<form action="sandwich/list" method="get">
+<form action="test" method="get">
     <c:forEach var="sandwich" items="${list}">
-        <select name="choice" id="">
-            <option value="${sandwich.component}">${sandwich.component}</option>
-        </select>
+        <input type="checkbox" name="choice" value="${sandwich.component}">${sandwich.component}
     </c:forEach>
-    <input type="submit" value="save">
+    <input type="submit" id="submit" value="save">
 </form>
+<span>Thành phần gồm có : ${result}</span>
 
 </body>
 </html>

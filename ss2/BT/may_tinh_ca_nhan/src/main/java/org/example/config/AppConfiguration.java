@@ -29,16 +29,4 @@ public class AppConfiguration extends WebMvcConfigurerAdapter implements Applica
         bean.setSuffix(".jsp");
         return bean;
     }
-
-//    @Bean
-//    public StudentRepository getStudentRepository() {
-//        return new StudentRepositoryImpl();
-//    }
-//
-//    @Bean
-//    public StudentService getStudentService() {
-//        StudentServiceImpl service = new StudentServiceImpl();
-//        service.setStudentRepository(this.applicationContext.getBean(StudentRepository.class));
-//        return service;
-//    }
 }
