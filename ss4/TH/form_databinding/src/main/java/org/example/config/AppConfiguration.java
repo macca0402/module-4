@@ -1,4 +1,4 @@
-package codegym.vn.config;
+package org.example.config;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("codegym.vn")
+@ComponentScan("org.example")
 public class AppConfiguration extends WebMvcConfigurerAdapter implements ApplicationContextAware {
     private ApplicationContext applicationContext;
 
